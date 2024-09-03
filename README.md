@@ -16,74 +16,66 @@ A simple command line interface (CLI) application to manage your tasks. You can 
 
 ## Installation
 
-1. Clone the repository:
+Clone the repository:
 ```bash
 git clone https://github.com/gkavinrajanCodes/CLI
 ```
-Usage
+## Usage
 The application can be run from the command line using the following syntax:
 
-bash
-Copy code
+```bash
 python task-cli.py <command> [<args>]
+```
+1. Commands
+    
+    1. Add a new task:
+    ```bash
+    python task-cli.py add "Task description"
+    ```
+    2. Update a task:
+    ```bash
+    python task-cli.py update <id> "New task description"
+    ```
+    3. Delete a task:
+    ```bash
+    python task-cli.py delete <id>
+    ```
+    4. Mark a task as in-progress:
+    ```bash
+    python task-cli.py mark-in-progress <id>
+    ```
+    5. Mark a task as done:
+    ```bash
+    python task-cli.py mark-done <id>
+    ```
+    6. List all tasks:
+    ```bash
+    python task-cli.py list
+    ```
+    7. List tasks by status:
+    ```bash
+    python task-cli.py list <status>
+    ```
 
-Commands
-Add a new task:
+2. Examples
+    
+    1. Add a task:
+    ```bash
+    python task-cli.py add "Buy groceries"
+    Output: Task added successfully (ID: 1)
+    ```
+    2. Update a task:
+    ```bash
+    python task-cli.py update 1 "Buy groceries and cook dinner"
+    Output: Task updated successfully (ID: 1)
+    ```
+    3. Delete a task:
+    ```bash
+    python task-cli.py delete 1
+    Output: Task deleted successfully (ID: 1)
+    ```
 
-bash
-python task-cli.py add "Task description"
-
-Update a task:
-
-bash
-python task-cli.py update <id> "New task description"
-
-Delete a task:
-
-bash
-python task-cli.py delete <id>
-
-Mark a task as in-progress:
-
-bash
-python task-cli.py mark-in-progress <id>
-Mark a task as done:
-
-bash
-
-python task-cli.py mark-done <id>
-List all tasks:
-
-bash
-
-python task-cli.py list
-List tasks by status:
-
-bash
-
-python task-cli.py list <status>
-Example: python task-cli.py list done
-
-Examples
-Add a task:
-
-bash
-python task-cli.py add "Buy groceries"
-Output: Task added successfully (ID: 1)
-
-Update a task:
-
-bash
-python task-cli.py update 1 "Buy groceries and cook dinner"
-Output: Task updated successfully (ID: 1)
-
-Delete a task:
-
-bash
-python task-cli.py delete 1
-Output: Task deleted successfully (ID: 1)
-
-Contributing
+# Contributing
 Feel free to submit issues or pull requests for improvements and new features.
 
 
