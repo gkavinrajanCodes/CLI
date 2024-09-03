@@ -14,6 +14,11 @@ A simple command line interface (CLI) application to manage your tasks. You can 
 
 - Python 3.x
 
+## Project URL
+```bash
+https://roadmap.sh/projects/task-tracker
+```
+
 ## Installation
 
 Clone the repository:
